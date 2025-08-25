@@ -30,8 +30,11 @@
 			<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
 				<ul class="navbar-nav">
 					<li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
-					<li class="nav-item"><a class="nav-link" href="#section-subject">Subject</a></li>
-					<li class="nav-item"><a class="nav-link" href="#section-projects">Projects</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-subjects">Subjects</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-IS101">IS 101</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-IS102">IS 102</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-project-IS101">Project IS 101</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-project-IS102">Project IS 102</a></li>
 					<li class="nav-item"><a class="nav-link" href="#section-about">About</a></li>
 					<li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li>
 				</ul>
@@ -48,7 +51,7 @@
 				<div class="col-md-10 text-center pt-5">
 
 					<h1 class="site-heading site-animate">Hello, I'm <strong class="d-block">John Christian B. Coronacion</strong></h1>
-					<strong class="d-block text-white text-uppercase letter-spacing">and this is My Subject</strong>
+					<strong class="d-block text-white text-uppercase letter-spacing">and this is My Subjects</strong>
 
 				</div>
 			</div>
@@ -56,10 +59,192 @@
 	</section> <!-- section -->
 
 
+	<section class="site-section" id="section-subjects">
+		<div class="container">
+			<!-- Section Title -->
+			<div class="row mb-5">
+				<div class="col-md-12">
+					<div class="section-heading text-center">
+						<h1 class="display-4 mb-3">My Subjects</h1>
+						<div class="decorative-line mx-auto mb-4"></div>
+						<p class="lead">Explore the courses that shape my academic journey</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Subjects Cards -->
+			<div class="row">
+				<div class="col-md-6 mb-4">
+					<div class="content-card subject-card h-100">
+						<div class="card-icon mb-3">
+							<i class="fas fa-presentation" style="font-size: 2.5rem; color: #007bff;"></i>
+						</div>
+						<div class="section-heading text-center">
+							<h2>IS 101: <strong>Advanced Presentation and Reasoning</strong></h2>
+							<p>Master the art of effective communication, critical thinking, and persuasive presentation in the digital age</p>
+							<div class="subject-description mt-4">
+								<p><em>This course develops advanced communication skills through systematic training in presentation techniques, logical reasoning, and critical analysis. Students learn to construct compelling arguments, deliver engaging presentations, and evaluate information critically in professional and academic contexts.</em></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-6 mb-4">
+					<div class="content-card subject-card h-100">
+						<div class="card-icon mb-3">
+							<i class="fas fa-robot" style="font-size: 2.5rem; color: #28a745;"></i>
+						</div>
+						<div class="section-heading text-center">
+							<h2>IS 102: <strong>Basic Machine Learning</strong></h2>
+							<p>Discover the fundamentals of artificial intelligence and machine learning to solve real-world problems with data-driven solutions</p>
+							<div class="subject-description mt-4">
+								<p><em>An introductory course that provides foundational knowledge in machine learning concepts, algorithms, and applications. Students gain hands-on experience with data analysis, model building, and ethical AI practices while exploring how machine learning transforms industries and society.</em></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Decorative Divider -->
+			<div class="row mt-5">
+				<div class="col-md-12">
+					<div class="section-divider text-center">
+						<div class="divider-line"></div>
+						<div class="divider-icon">
+							<i class="fas fa-graduation-cap" style="font-size: 1.5rem; color: #6c757d;"></i>
+						</div>
+						<div class="divider-line"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Clean Dark Theme Styling -->
+		<style>
+			/* Section Background */
+			#section-subjects {
+				background: #2a2a2a;
+				color: #ffffff;
+				padding: 80px 0;
+			}
+
+			.decorative-line {
+				width: 100px;
+				height: 3px;
+				background: #ffffff;
+				border-radius: 2px;
+			}
+
+			.subject-card {
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+				border: 1px solid #555555;
+				background: linear-gradient(135deg, #333333 0%, #404040 100%);
+				position: relative;
+				overflow: hidden;
+				border-radius: 12px;
+				box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+			}
+
+			.subject-card::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				height: 3px;
+				background: #ffffff;
+			}
+
+			.subject-card:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+				border-color: #666666;
+			}
+
+			.card-icon {
+				text-align: center;
+				margin-top: 20px;
+			}
+
+			.card-icon i {
+				color: #ffffff !important;
+				transition: transform 0.3s ease;
+			}
+
+			.subject-card:hover .card-icon i {
+				transform: scale(1.05);
+			}
+
+			.section-divider {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 60px 0;
+			}
+
+			.divider-line {
+				flex: 1;
+				height: 2px;
+				background: #ffffff;
+				max-width: 200px;
+			}
+
+			.divider-icon {
+				margin: 0 25px;
+				background: #404040;
+				padding: 15px;
+				border-radius: 50%;
+				border: 2px solid #555555;
+			}
+
+			.divider-icon i {
+				color: #ffffff !important;
+			}
+
+			.display-4 {
+				font-weight: 700;
+				color: #ffffff;
+				margin-bottom: 20px;
+			}
+
+			.lead {
+				color: #b0b0b0;
+				font-style: italic;
+			}
+
+			/* Text Colors for Clean Dark Theme */
+			.subject-card h2 {
+				color: #ffffff;
+			}
+
+			.subject-card p {
+				color: #d0d0d0;
+			}
+
+			.subject-card em {
+				color: #b0b0b0;
+			}
+
+			.subject-card strong {
+				color: #ffffff;
+			}
+
+			/* Responsive adjustments */
+			@media (max-width: 768px) {
+				.subject-card {
+					margin-bottom: 30px;
+				}
+				
+				.section-divider {
+					margin: 40px 0;
+				}
+			}
+		</style>
+	</section>
 
 
 
-	<section class="site-section" id="section-subject">
+	<section class="site-section" id="section-IS101">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 mb-5">
@@ -125,8 +310,7 @@
 
 
 
-
-		<section class="site-section" id="section-projects">
+		<section class="site-section" id="section-project-IS101">
 			<div class="container">
 				<div class="row">
 					<div class="section-heading text-center col-md-12">
@@ -246,6 +430,195 @@
 			</div>
 		</section>
 	<!-- .section -->
+
+
+
+	<section class="site-section" id="section-IS102">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mb-5">
+					<div class="section-heading text-center">
+						<h2>IS 102: <strong>Basic Machine Learning</strong></h2>
+						<p>Discover the fundamentals of artificial intelligence and machine learning to solve real-world problems with data-driven solutions</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="content-card">
+						<h2>Learning Objectives</h2>
+						
+						<div class="learning-item">
+							<h3>Machine Learning Fundamentals</h3>
+							<p>Understand core ML concepts including supervised, unsupervised, and reinforcement learning algorithms, and their practical applications in various domains.</p>
+						</div>
+
+						<div class="learning-item">
+							<h3>Data Processing & Analysis</h3>
+							<p>Master techniques for data collection, cleaning, preprocessing, and feature engineering to prepare datasets for machine learning models.</p>
+						</div>
+
+						<div class="learning-item">
+							<h3>Algorithm Implementation</h3>
+							<p>Learn to implement and optimize popular ML algorithms including linear regression, decision trees, neural networks, and clustering techniques.</p>
+						</div>
+
+						<div class="learning-item">
+							<h3>Model Evaluation</h3>
+							<p>Develop skills in assessing model performance using metrics, cross-validation, and techniques to prevent overfitting and underfitting.</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-6">
+					<div class="content-card">
+						<h2>Course Components</h2>
+
+						<div class="learning-item">
+							<h3>Programming Foundations</h3>
+							<p>Build proficiency in Python programming, utilizing libraries like NumPy, Pandas, Scikit-learn, and TensorFlow for machine learning development.</p>
+						</div>
+
+						<div class="learning-item">
+							<h3>Hands-on Projects</h3>
+							<p>Apply theoretical knowledge through practical projects involving real datasets, from simple predictions to complex pattern recognition tasks.</p>
+						</div>
+
+						<div class="learning-item">
+							<h3>Industry Applications</h3>
+							<p>Explore ML applications across industries including healthcare, finance, e-commerce, and technology through case studies and examples.</p>
+						</div>
+
+						<div class="learning-item">
+							<h3>Ethics & Best Practices</h3>
+							<p>Understand responsible AI development, including bias detection, fairness considerations, and ethical implications of machine learning systems.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="site-section" id="section-project-IS102">
+		<div class="container">
+			<div class="row">
+				<div class="section-heading text-center col-md-12">
+					<h2>Featured <strong>Projects</strong></h2>
+				</div>
+			</div>
+			
+	
+			<div class="filters-content">
+				<!-- Coming Soon Display -->
+				<div class="row">
+					<div class="col-12 text-center">
+						<div class="coming-soon-placeholder" style="padding: 60px 20px; background: #1a1a1a; border: 1px solid #333; border-radius: 10px; margin: 40px 0;">
+							<h3 style="font-size: 2rem; margin-bottom: 20px; color: #fff;">🚀 Projects Coming Soon!</h3>
+							<p style="font-size: 1.1rem; color: #ccc; max-width: 600px; margin: 0 auto 30px;">
+								I'm currently working on some amazing projects that will showcase my skills. Stay tuned for updates!
+							</p>
+							<span style="background: #007bff; color: white; padding: 10px 25px; border-radius: 25px; font-weight: 500;">Under Development</span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Project placeholders for future use -->
+				<div class="row grid">
+					<!-- Placeholder project cards -->
+					<div class="single-portfolio col-sm-4 all mockup">
+						<div class="relative">
+							<div class="thumb" style="background: #2a2a2a; border: 1px solid #444; display: flex; align-items: center; justify-content: center; height: 250px; color: #666;">
+								<div style="text-align: center;">
+									<div style="font-size: 3rem; margin-bottom: 10px;"></div>
+									<p style="margin: 0; font-size: 0.9rem;">Project Placeholder</p>
+								</div>
+							</div>
+						</div>
+						<div class="p-inner">
+							<h4>Project Title 1</h4>
+							<div class="cat"></div>
+						</div>
+					</div>
+					
+					<div class="single-portfolio col-sm-4 all packaging">
+						<div class="relative">
+							<div class="thumb" style="background: #2a2a2a; border: 1px solid #444; display: flex; align-items: center; justify-content: center; height: 250px; color: #666;">
+								<div style="text-align: center;">
+									<div style="font-size: 3rem; margin-bottom: 10px;"></div>
+									<p style="margin: 0; font-size: 0.9rem;">Project Placeholder</p>
+								</div>
+							</div>
+						</div>
+						<div class="p-inner">
+							<h4>Project Title 2</h4>
+							<div class="cat"></div>
+						</div>
+					</div>
+					
+					<div class="single-portfolio col-sm-4 all typography">
+						<div class="relative">
+							<div class="thumb" style="background: #2a2a2a; border: 1px solid #444; display: flex; align-items: center; justify-content: center; height: 250px; color: #666;">
+								<div style="text-align: center;">
+									<div style="font-size: 3rem; margin-bottom: 10px;"></div>
+									<p style="margin: 0; font-size: 0.9rem;">Project Placeholder</p>
+								</div>
+							</div>
+						</div>
+						<div class="p-inner">
+							<h4>Project Title 3</h4>
+							<div class="cat"></div>
+						</div>
+					</div>
+					
+					<div class="single-portfolio col-sm-4 all photography">
+						<div class="relative">
+							<div class="thumb" style="background: #2a2a2a; border: 1px solid #444; display: flex; align-items: center; justify-content: center; height: 250px; color: #666;">
+								<div style="text-align: center;">
+									<div style="font-size: 3rem; margin-bottom: 10px;"></div>
+									<p style="margin: 0; font-size: 0.9rem;">Project Placeholder</p>
+								</div>
+							</div>
+						</div>
+						<div class="p-inner">
+							<h4>Project Title 4</h4>
+							<div class="cat"></div>
+						</div>
+					</div>
+					
+					<div class="single-portfolio col-sm-4 all mockup">
+						<div class="relative">
+							<div class="thumb" style="background: #2a2a2a; border: 1px solid #444; display: flex; align-items: center; justify-content: center; height: 250px; color: #666;">
+								<div style="text-align: center;">
+									<div style="font-size: 3rem; margin-bottom: 10px;"></div>
+									<p style="margin: 0; font-size: 0.9rem;">Project Placeholder</p>
+								</div>
+							</div>
+						</div>
+						<div class="p-inner">
+							<h4>Project Title 5</h4>
+							<div class="cat"></div>
+						</div>
+					</div>
+					
+					<div class="single-portfolio col-sm-4 all packaging">
+						<div class="relative">
+							<div class="thumb" style="background: #2a2a2a; border: 1px solid #444; display: flex; align-items: center; justify-content: center; height: 250px; color: #666;">
+								<div style="text-align: center;">
+									<div style="font-size: 3rem; margin-bottom: 10px;"></div>
+									<p style="margin: 0; font-size: 0.9rem;">Project Placeholder</p>
+								</div>
+							</div>
+						</div>
+						<div class="p-inner">
+							<h4>Project Title 6</h4>
+							<div class="cat"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 
 
 
@@ -392,9 +765,7 @@
 
 			<div class="row mb-5">
 				<p class="col-12 text-center">
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true" ></i> by <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					
 				</p>
 			</div>
 			
